@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustledifferentthings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 1rem;
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        .payment-form label, .payment-form input, .payment-form button {
+            margin-bottom: 10px;
+        }
+        .payment-form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .payment-form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hustledifferentthings</h1>
+    </header>
+    <div class="container">
+        <section class="section" id="about">
+            <h2>Om mig</h2>
+            <p>Jag heter Hustledifferentthings och jag strävar efter att hitta olika tekniker att tjäna pengar på vid sidan av ett vanligt jobb. Jag vill inte vara en i normen, därav gillar jag inte att sprida falsk information då jag själv har varit i den sits som alla är i, jag eftersträvar därför att inte bli som de andra som lurar, utan att faktiskt kunna kontrollera min girighet och ge ut information för ett pris som faktiskt är värt det.</p>
+        </section>
+        <section class="section" id="contact">
+            <h2>Kontakt</h2>
+            <div class="social-media">
+                <p>Följ mig på sociala medier:</p>
+                <a href="https://www.instagram.com/dittanvändarnamn" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/dittanvändarnamn" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/dittanvändarnamn" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+        <section class="section" id="payment">
+            <h2>Kursbetalning</h2>
+            <form class="payment-form">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email" required>
+                <label for="course">Kurs</label>
+                <input type="text" id="course" name="course" required>
+                <label for="amount">Belopp (SEK)</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Betala</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
